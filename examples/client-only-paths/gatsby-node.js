@@ -9,7 +9,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
     // Make the front page match everything client side.
     // Normally your paths should be a bit more judicious.
     if (page.path === `/`) {
-      page.matchPath = `/:path`
+      page.matchPath = `/color/:path`
       createPage(page)
     }
     resolve()

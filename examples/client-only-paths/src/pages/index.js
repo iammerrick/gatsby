@@ -15,14 +15,15 @@ class AnimationExample extends React.Component {
               <Route
                 exact
                 path="/"
-                render={() => <Redirect to="/10/90/50" />}
+                render={() => <Redirect to="/color/10/90/50" />}
               />
 
               <ul style={styles.nav}>
-                <NavLink to="/10/90/50">Red</NavLink>
-                <NavLink to="/120/100/40">Green</NavLink>
-                <NavLink to="/200/100/40">Blue</NavLink>
-                <NavLink to="/310/100/50">Pink</NavLink>
+                <NavLink to="/color/10/90/50">Red</NavLink>
+                <NavLink to="/color/120/100/40">Green</NavLink>
+                <NavLink to="/color/200/100/40">Blue</NavLink>
+                <NavLink to="/color/310/100/50">Pink</NavLink>
+                <NavLink to="/search">Named Search</NavLink>
               </ul>
 
               <div style={styles.content}>
@@ -40,7 +41,7 @@ class AnimationExample extends React.Component {
                   <Route
                     location={location}
                     key={location.key}
-                    path="/:h/:s/:l"
+                    path="/color/:h/:s/:l"
                     component={HSL}
                   />
                 </ReactCSSTransitionGroup>

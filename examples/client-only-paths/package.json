@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-preset-env": "^1.7.0",
     "gatsby": "latest",
     "gatsby-link": "latest",
     "gatsby-plugin-google-analytics": "latest",
@@ -17,7 +18,9 @@
     "typography": "^0.15.8",
     "typography-breakpoint-constants": "^0.14.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
